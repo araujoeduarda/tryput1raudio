@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRPlay</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        /* ocupar total pagina */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Cor de fundo clara */
+        }
+
+        /* container do qr */
+        #qrcode {
+            padding: 10px; /* Adiciona algum espaçamento ao redor do QR Code */
+            background-color: #ffffff; /* Cor de fundo branca para o QR Code */
+            border: 1px solid #cccccc; /* Borda leve ao redor do QR Code */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+    </style>
 </head>
 <body>
     <div id="qrcode"></div>
 
     <script>
-        // URL da página intermediária que faz o redirecionamento aleatório
+        // Urh da pag intermediaria q faz o redirecionamento aleatprio
         const redirectPageUrl = 'https://araujoeduarda.github.io/tryput1raudio/redirect.html'; // Atualize com a URL real
 
-        // Gerar o QR Code com a URL da página HTML
+        // gerar o qrode com a Url da pag html
         new QRCode(document.getElementById("qrcode"), redirectPageUrl);
 
         console.log('QR code gerado com a URL:', redirectPageUrl);
