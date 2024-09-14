@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRPlay</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="qrcode"></div>
+
+    <script>
+        // URL da página intermediária que faz o redirecionamento aleatório
+        const redirectPageUrl = 'URL_DA_PAGINA_REDIRECIONAMENTO'; // Atualize com a URL real
+
+        // Gerar o QR Code com a URL da página HTML
+        new QRCode(document.getElementById("qrcode"), redirectPageUrl);
+
+        console.log('QR code gerado com a URL:', redirectPageUrl);
+    </script>
+</body>
+</html>
